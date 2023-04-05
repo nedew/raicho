@@ -1,12 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import './App.css';
+import { Button } from 'ui';
+import { DatePicker } from '@mantine/dates';
 
 function App() {
   const [count, setCount] = useState(0);
+  const test: string = 'testsetes';
 
   return (
     <div className="App">
+      <DatePicker placeholder="Pick date" label="Event date" withAsterisk />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
@@ -20,6 +24,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <Button />
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
