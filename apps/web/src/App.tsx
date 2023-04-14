@@ -3,14 +3,21 @@ import reactLogo from './assets/react.svg';
 import './App.css';
 import { Button } from 'ui';
 import { DatePicker } from '@mantine/dates';
+import { Tmp } from './Tmp';
+import { TestTypes } from 'types';
+// import { TestTypes } from 'types';
 
 function App() {
   const [count, setCount] = useState(0);
   const test: string = 'testsetes';
 
+  const t: TestTypes = { prop: 'test' };
+  console.log(t);
+
   return (
     <div className="App">
       <DatePicker placeholder="Pick date" label="Event date" withAsterisk />
+      <Tmp />
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />

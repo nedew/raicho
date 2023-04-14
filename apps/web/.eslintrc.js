@@ -1,4 +1,8 @@
 module.exports = {
   root: true,
-  extends: ["custom"],
+  extends: ['plugin:react/recommended', 'custom'],
+  rules: {},
+  plugins: [
+    'react',
+  ],
 };
