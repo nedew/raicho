@@ -5,9 +5,10 @@ import { Button } from 'ui';
 import { DatePicker } from '@mantine/dates';
 import { Tmp } from './Tmp';
 import { TestTypes } from 'types';
-// import { TestTypes } from 'types';
+import { TypographyStylesProvider } from '@mantine/core';
+import styled from '@emotion/styled';
 
-function App() {
+export const App = () => {
   const [count, setCount] = useState(0);
   const test: string = 'testsetes';
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <Example />
       <DatePicker placeholder="Pick date" label="Event date" withAsterisk />
       <Tmp />
       <div>
@@ -41,6 +43,10 @@ function App() {
       </p>
     </div>
   );
-}
+};
 
-export default App;
+const Example = styled.div`
+  width: 100px;
+  height: 100px;
+  background-color: red;
+`;
