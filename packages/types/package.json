@@ -1,13 +1,13 @@
 {
-  "name": "types",
+  "name": "@raicho/types",
   "version": "1.0.0",
   "description": "",
   "main": "./index.tsx",
   "types": "./index.tsx",
   "devDependencies": {
+    "@raicho/eslint-config-custom": "*",
+    "@raicho/tsconfig": "*",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
     "typescript": "^4.5.2"
   },
   "scripts": {
