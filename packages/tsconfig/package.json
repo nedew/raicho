@@ -2,9 +2,5 @@
   "name": "@raicho/tsconfig",
   "version": "0.0.0",
   "private": true,
-  "files": [
-    "base.json",
-    "nextjs.json",
-    "react-library.json"
-  ]
+  "files": ["base.json", "nextjs.json", "nextjs.json", "types.json", "react-library.json"]
 }
