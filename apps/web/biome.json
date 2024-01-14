@@ -1,0 +1,20 @@
+{
+  "extends": ["../../biome.json"],
+  "linter": {
+    "ignore": [".next", "node_modules"],
+    "rules": {
+      "all": true,
+      "style": {
+        "noDefaultExport": "error"
+      }
+    }
+  },
+  "formatter": {
+    "ignore": [".next", "node_modules"]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double"
+    }
+  }
+}
