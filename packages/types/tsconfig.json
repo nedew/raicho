@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/types.json",
+  "extends": "@raicho/tsconfig/types.json",
   "include": ["."],
   "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": { "composite": true }
