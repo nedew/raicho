@@ -9,7 +9,15 @@
     "ignore": ["node_modules"],
     "rules": {
       "recommended": true,
-      "style": {}
+      "style": {
+        "noNamespace": "error"
+      },
+      "correctness": {
+        "noUndeclaredVariables": "error",
+        "noUnusedVariables": "error",
+        "useExhaustiveDependencies": "error",
+        "useHookAtTopLevel": "error"
+      }
     }
   },
   "formatter": {

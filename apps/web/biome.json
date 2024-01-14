@@ -2,12 +2,7 @@
   "extends": ["../../biome.json"],
   "linter": {
     "ignore": [".next", "node_modules"],
-    "rules": {
-      "all": true,
-      "style": {
-        "noDefaultExport": "error"
-      }
-    }
+    "rules": {}
   },
   "formatter": {
     "ignore": [".next", "node_modules"]
