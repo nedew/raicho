@@ -7,7 +7,7 @@ type Props = {
 
 const MainLayout: FC<Props> = ({ children }) => {
   return (
-    <div>
+    <div className={'flex flex-grow-1'}>
       <Sidebar />
       <main>{children}</main>
     </div>
