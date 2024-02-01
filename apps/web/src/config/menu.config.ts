@@ -14,25 +14,25 @@ type Menues = PrimaryMenu[];
 export const menues: Menues = [
   {
     id: 'home',
-    title: 'Home',
+    title: 'ホーム',
     path: '/',
     icon: 'home',
   },
   {
     id: 'team',
-    title: 'Team',
+    title: 'チーム',
     path: '/team',
     icon: 'info',
     children: [
       {
         id: 'team-about',
-        title: 'About',
+        title: 'チームについて',
         path: '/about',
         icon: 'info',
       },
       {
         id: 'team-members',
-        title: 'team',
+        title: 'メンバー',
         path: '/members',
         icon: 'info',
       },
@@ -40,7 +40,7 @@ export const menues: Menues = [
   },
   {
     id: 'attendance',
-    title: 'Attendance',
+    title: '勤怠管理',
     path: '/attendance',
     icon: 'info',
   },

@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Inter, Montserrat } from 'next/font/google';
 import React, { FC } from 'react';
 import './globals.css';
 
@@ -8,6 +8,7 @@ type Props = {
 };
 
 const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'ホーム | Raicho',
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
 const RootLayout: FC<Props> = ({ children }) => {
   return (
     <html lang="ja">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} ${montserrat.className}`}>{children}</body>
     </html>
   );
 };

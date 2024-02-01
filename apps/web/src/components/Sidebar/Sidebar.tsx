@@ -3,20 +3,24 @@ import React, { FC } from 'react';
 
 const Sidebar: FC = () => {
   return (
-    <aside className={'position-sticky w-[300px] bg-slate-200'}>
+    <aside className={'position-sticky w-[280px]'}>
       <div className={'flex items-center px-4 py-4'}>
-        <h1 className={'text-2xl font-bold'}>Raicho</h1>
+        <h1 className={'text-2xl font-bold text-slate-700'}>
+          <a href="/">Raicho</a>
+        </h1>
       </div>
       <div className={'px-4 py-2'}>
         <ul>
           {menues.map((menu) => (
-            <li key={menu.id}>
-              <div>
-                <a href={menu.path}>{menu.title}</a>
+            <li className={'pb-2'} key={menu.id}>
+              <div className={'text-slate-500'}>
+                <a href={menu.path} className={'block pb-2 last:pb-0'}>
+                  {menu.title}
+                </a>
                 {menu.children && (
-                  <ul>
+                  <ul className={'pl-5'}>
                     {menu.children.map((child) => (
-                      <li key={child.id}>
+                      <li className={'pb-2 last:pb-0'} key={child.id}>
                         <a href={child.path}>{child.title}</a>
                       </li>
                     ))}

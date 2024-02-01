@@ -1,3 +1,4 @@
+import { MainContent } from '@/components/MainContent/MainContent';
 import Sidebar from '@/components/Sidebar/Sidebar';
 import React, { FC } from 'react';
 
@@ -7,9 +8,9 @@ type Props = {
 
 const MainLayout: FC<Props> = ({ children }) => {
   return (
-    <div className={'flex flex-grow-1'}>
+    <div className={'flex flex-grow-1 bg-slate-100'}>
       <Sidebar />
-      <main>{children}</main>
+      <MainContent>{children}</MainContent>
     </div>
   );
 };
