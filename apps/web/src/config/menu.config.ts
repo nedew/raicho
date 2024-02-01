@@ -1,11 +1,14 @@
+import { IconType } from 'react-icons';
+import { FiClock, FiHome, FiUsers } from 'react-icons/fi';
+
 type Menu = {
   id: string;
   title: string;
   path: string;
-  icon: string;
 };
 
 type PrimaryMenu = Menu & {
+  icon: IconType;
   children?: Menu[];
 };
 
@@ -16,25 +19,23 @@ export const menues: Menues = [
     id: 'home',
     title: 'ホーム',
     path: '/',
-    icon: 'home',
+    icon: FiHome,
   },
   {
     id: 'team',
     title: 'チーム',
     path: '/team',
-    icon: 'info',
+    icon: FiUsers,
     children: [
       {
         id: 'team-about',
         title: 'チームについて',
         path: '/about',
-        icon: 'info',
       },
       {
         id: 'team-members',
         title: 'メンバー',
         path: '/members',
-        icon: 'info',
       },
     ],
   },
@@ -42,6 +43,6 @@ export const menues: Menues = [
     id: 'attendance',
     title: '勤怠管理',
     path: '/attendance',
-    icon: 'info',
+    icon: FiClock,
   },
 ];
