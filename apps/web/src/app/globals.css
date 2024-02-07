@@ -6,6 +6,8 @@
   /* CSS Variables */
   --header-height: 64px;
   --sidebar-width: 256px;
+  /* colors */
+  --c-border-primary: #e5e5e5;
 
   --max-width: 1100px;
   --border-radius: 12px;
