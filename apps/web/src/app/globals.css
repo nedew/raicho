@@ -8,6 +8,8 @@
   --sidebar-width: 256px;
   /* colors */
   --c-border-primary: #e5e5e5;
+  /* fonts */
+  --font-family-base: "Inter", "Noto Sans JP", sans-serif;
 
   --max-width: 1100px;
   --border-radius: 12px;
@@ -105,6 +107,7 @@ body {
     rgb(var(--background-start-rgb)); */
   background-color: #fff;
   color: #222222;
+  font-family: var(--font-family-base);
 }
 
 a {
