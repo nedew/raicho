@@ -1,7 +1,7 @@
 import { menues } from '@/config/menu.config';
 import React, { FC } from 'react';
 
-const Sidebar: FC = () => {
+export const Sidebar: FC = () => {
   return (
     <aside className={'position-sticky w-[300px]'}>
       <div className={'flex items-center px-4 py-4'}>
@@ -43,5 +43,3 @@ const Sidebar: FC = () => {
     </aside>
   );
 };
-
-export default Sidebar;
