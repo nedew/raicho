@@ -30,12 +30,12 @@ export const menues: Menues = [
       {
         id: 'team-about',
         title: 'チームについて',
-        path: '/about',
+        path: '/team/about',
       },
       {
         id: 'team-members',
         title: 'メンバー',
-        path: '/members',
+        path: '/team/members',
       },
     ],
   },
