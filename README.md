@@ -45,6 +45,34 @@ docker compose ps
 docker compose restart
 ```
 
+### Migration
+
+- Prisma の CLI は api ディレクトリで実行するため移動
+
+```sh
+cd apps/api
+```
+
+- マイグレーションファイルの生成(実行無し)
+
+```sh
+npx prisma migrate dev --name <migration_name> --create-only
+```
+
+- マイグレーションの実行
+
+```sh
+npx prisma migrate deploy
+```
+
+- リセット
+  - テーブルを一度全て DROP してマイグレーションを最初から行う
+  - 今あるデータは全て削除される
+
+```sh
+npx prisma migrate reset
+```
+
 ### Remote Caching
 
 Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
