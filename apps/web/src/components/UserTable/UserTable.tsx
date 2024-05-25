@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 interface User {
   id: number;
@@ -6,11 +6,11 @@ interface User {
   email: string;
 }
 
-interface UserTableProps {
+interface Props {
   users: User[];
 }
 
-export const UserTable: FC<UserTableProps> = ({ users }) => {
+export const UserTable: FC<Props> = ({ users }) => {
   return (
     <table>
       <thead>
