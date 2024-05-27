@@ -6,6 +6,9 @@
     "quickfix.biome": "explicit",
     "source.organizeImports.biome": "explicit"
   },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   "[javascript]": {
     "editor.defaultFormatter": "biomejs.biome"
   },
