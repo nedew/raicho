@@ -45,4 +45,4 @@ export const menues: Menues = [
     path: '/attendance',
     icon: FiClock,
   },
-];
+] as const;

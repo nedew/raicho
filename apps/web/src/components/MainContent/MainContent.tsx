@@ -9,9 +9,8 @@ export const MainContent: FC<Props> = ({ children }) => {
     <main
       className="
       bg-neutral-100 w-full h-[calc(100vh-calc(0.5rem*2))]
-        border border-slate-250 border-solid p-4
+        border border-slate-250 border-solid py-4 px-content-side
       "
-      // shadow-[0_0_5px_0_rgba(0,0,0,0.1),0_1px_1px_-1px_rgba(0,0,0,0.1)]
     >
       {children}
     </main>
